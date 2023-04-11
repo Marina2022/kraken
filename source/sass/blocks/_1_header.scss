@@ -1,0 +1,52 @@
+@import "../global/variables";
+
+.header {
+
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 116px;
+  width: 100%;
+  font-size: 18px;
+
+
+  &__brand {
+    font-size: 25px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-right: 25%;
+  }
+
+  &__center-links {
+    display: flex;
+    justify-content: space-between;
+    width: 17%;
+    margin-right: auto;
+    align-items: center;
+    line-height: 23px;
+  }
+
+  &__link {
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+
+    &--active {
+      color: #FFFFFF;
+    }
+
+
+  }
+
+  &__tor {
+    color: #fff;
+    margin-right: 20px;
+  }
+
+
+
+}
+
+

@@ -1,0 +1,35 @@
+.garant {
+  padding: 150px 0;
+  background-color: #111;
+  h2 {
+    margin-bottom: 10px;
+  }
+  .lead {
+    max-width: 900px;
+    margin-bottom: 100px;
+  }
+}
+
+.garant__list {
+  display: flex;
+  justify-content: space-between;
+}
+.garant__item {
+  max-width: 338px;
+  h3 {
+    margin-bottom: 5px;
+  }
+}
+
+.garant-item__number {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: $green;
+  margin-bottom: 25px;
+}
+
+.garant-item__text {
+
+}

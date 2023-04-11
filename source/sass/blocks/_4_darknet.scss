@@ -1,0 +1,28 @@
+.darknet__wrapper {
+  display: flex;
+  //flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+
+.darknet__img-container {
+  width: 50%;
+}
+
+.darknet__content {
+  width: 50%;
+  max-width: 680px;
+  margin-left: 50px;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+    margin-top: 50px;
+  }
+
+  p {
+    line-height: 21px;
+  }
+}

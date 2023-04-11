@@ -1,0 +1,62 @@
+.advantages {
+  padding-top: 30px;
+}
+
+.advantages__title {
+  margin-bottom: 50px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 306px;
+
+}
+
+.advantage-card {
+  text-align: center;
+  min-height: 342px;
+  width: 32.5%;
+  padding: 40px 40px 60px 40px;
+  background-color: #111111;
+  position: relative;
+}
+
+.advantage-card--green {
+background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(0, 255, 199, 0.14) 100%);
+}
+
+.advantage-card__img {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 20px;
+}
+
+.advantage-card__title {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.advantage-card--first:after {
+  content: '';
+  position: absolute;
+  bottom: -114px;
+  right: -40px;
+  width: 176px;
+  height: 222px;
+  background: url("../img/advantage-imgs/tentacle.png") no-repeat;
+}
+
+.advantage-card--last:after {
+  content: '';
+  position: absolute;
+  left: -93px;
+  top: -90px;
+  width: 213px;
+  height: 474px;
+  background: url("../img/advantage-imgs/tentacle-2.png") no-repeat;
+}

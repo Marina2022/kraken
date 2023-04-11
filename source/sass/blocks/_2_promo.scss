@@ -1,0 +1,40 @@
+.promo {
+  min-height: 1000px;
+  background: url("../img/promo-bg.png");
+  margin-top: -116px;
+  padding-top: 116px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.promo__text {
+  .return-legend {
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 190px;
+  }
+
+  .let-go-kraken {
+    color: $green;
+  }
+
+  .description {
+    color: #fff;
+    margin-bottom: 80px;
+  }
+
+}
+
+.promo__img {
+  padding-left: 10%;
+}
+
+.tor-download-btn {
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  padding: 15px 30px;
+  margin-left: 20px;
+}
