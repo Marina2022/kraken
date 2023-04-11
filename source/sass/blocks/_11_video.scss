@@ -1,0 +1,30 @@
+.video-about-kraken {
+  margin-bottom: 250px;
+  h2 {
+    margin-bottom: 10px;
+    max-width: 900px;
+  }
+
+  .lead {
+    max-width: 900px;
+    margin-bottom: 50px;
+  }
+}
+
+.video-cover {
+  width: 100%;
+  height: auto;
+  min-height: 930px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/video.png") no-repeat;
+  background-size: cover;
+}
+
+.video-frame {
+  width: 100%;
+  height: auto;
+  min-height: 930px;
+  border: none;
+}

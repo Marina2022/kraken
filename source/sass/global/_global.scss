@@ -30,6 +30,7 @@ a {
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
+  cursor: pointer;
 }
 
 .hidden {
@@ -111,4 +112,18 @@ img {
   font-size: 18px;
   line-height: 23px;
   color: rgba(10, 215, 141, 0.8);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.fully-hidden {
+  display: none;
 }

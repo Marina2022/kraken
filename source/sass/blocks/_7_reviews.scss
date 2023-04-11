@@ -24,7 +24,7 @@
   }
 
   .buyer-name {
-    margin-top: 40px;
+    margin-top: auto;
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -41,6 +41,9 @@
 }
 
 .reviews-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 467px;
   padding: 51px 78px 40px 40px;
   width: 50%;
   margin-right: 20px;
@@ -73,10 +76,11 @@
   width: 70px;
   height: 70px;
   margin-right: 20px;
+  background: url("../img/reviews-imgs/ava2.png");
 }
 
 .reviews__icon--o {
-  background: rgba(10, 215, 141, 0.3);
+  background: url("../img/reviews-imgs/ava1.png");
   font-family: 'Mulish', sans-serif;
   font-weight: 700;
   font-size: 30px;

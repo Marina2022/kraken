@@ -1,12 +1,41 @@
 .garant {
   padding: 150px 0;
   background-color: #111;
+  overflow: hidden;
+
+
   h2 {
     margin-bottom: 10px;
   }
+
   .lead {
     max-width: 900px;
     margin-bottom: 100px;
+  }
+
+  .container {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 522px;
+      height: 305px;
+      background: rgba(10, 215, 141, 0.1);
+      filter: blur(125px);
+      left: -200px;
+      top: 50px;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 404px;
+      height: 213px;
+      right: -300px;
+      top: 200px;
+      background: rgba(10, 215, 141, 0.1);
+      filter: blur(125px);
+    }
   }
 }
 
@@ -14,8 +43,10 @@
   display: flex;
   justify-content: space-between;
 }
+
 .garant__item {
   max-width: 338px;
+
   h3 {
     margin-bottom: 5px;
   }
