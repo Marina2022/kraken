@@ -1,5 +1,8 @@
 .faqs {
   margin-bottom: 200px;
+  @media (max-width: 1200px) {
+    margin-bottom: 10%;
+  }
   h2 {
     margin-bottom: 58px;
   }
@@ -15,6 +18,9 @@
   padding-bottom: 27px;
   border-bottom: 2px solid rgba(10, 215, 141, 0.6);
   margin-bottom: 27px;
+  @media (max-width: 992px) {
+    font-size: 22px;
+  }
 }
 
 .faq-item {
@@ -26,8 +32,14 @@
     height: 50px;
     width: 50px;
     background: url("../img/closed.svg");
+    background-size: contain;
     top: -8px;
     right: 0;
+    @media (max-width: 992px) {
+      height: 40px;
+      width: 40px;
+      top: 0;
+    }
   }
 
 }

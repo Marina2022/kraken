@@ -21,6 +21,9 @@
   .lead {
     margin-bottom: 50px;
     max-width: 37%;
+    @media (max-width: 992px) {
+      max-width: 80%;
+    }
   }
 
   .buyer-name {
@@ -38,6 +41,12 @@
 .reviews-list {
   display: flex;
   margin-bottom: 200px;
+  @media (max-width: 1200px) {
+    margin-bottom: 10%;
+  }
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+  }
 }
 
 .reviews-item {
@@ -49,6 +58,11 @@
   margin-right: 20px;
   background-color: #111111;
   position: relative;
+  @media (max-width: 992px) {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -68,15 +82,23 @@
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .reviews__icon {
+
   border-radius: 50%;
   background: rgba(10, 215, 141);
   width: 70px;
   height: 70px;
   margin-right: 20px;
   background: url("../img/reviews-imgs/ava2.png");
+  @media (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
 }
 
 .reviews__icon--o {

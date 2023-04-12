@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+        content=" Кракен - безопасный даркнет маркетплейс, где вы можете приобрести любые товары абсолютно анонимно">
   <title>Kraken</title>
+  <!--  <link rel="manifest" href=manifest.json">-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -21,15 +27,29 @@
     <div class="main-nav">
       <span class="main-nav__brand">Кракен</span>
 
-      <div class="main-nav__center-links">
-        <a href="#" class="main-nav__link main-nav__link--active">Зеркало</a>
-        <a href="#">Вход</a>
-        <a href="#">Ссылка</a>
-      </div>
+        <div class="main-nav__center-links">
+          <a href="#" class="main-nav__link main-nav__link--active">Зеркало</a>
+          <a href="#">Вход</a>
+          <a href="#">Ссылка</a>
+        </div>
+        <a href="#" class="main-nav__tor">Войти через TOR</a>
+        <a href="#" class="main-nav__vpn green-btn">Войти через VPN</a>
+
+        <button class="button hamburger-btn">
+          <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </button>
+
+
+    </div>
+    <div class="mobile-menu fully-hidden">
+      <a href="#" class="main-nav__link main-nav__link--active">Зеркало</a>
+      <a href="#">Вход</a>
+      <a href="#">Ссылка</a>
       <a href="#" class="main-nav__tor">Войти через TOR</a>
-      <a href="#" class="green-btn">Войти через VPN</a>
+      <a href="#" class="main-nav__vpn green-btn">Войти через VPN</a>
     </div>
   </div>
+
 </header>
 
 <main>
@@ -65,7 +85,7 @@
       <ul class="advantages__list">
         <li class="advantage-card advantage-card--first">
           <img class="advantage-card__img" src="img/advantage-imgs/adv-icon1.svg" alt="advantage-icon">
-          <h2 class="advantage-card__title">Обновленный интерфейс на площадке Kraken</h2>
+          <h3 class="advantage-card__title">Обновленный интерфейс на площадке Kraken</h3>
           <p class="advantage-card__text">
             Пользователи привыкли к знакомому и удобному интерфейсу на Гидре, поэтому, когда Соляри и Блэкспрут
             представили свои сложные и непонятные личные кабинеты, пользователи выразили недовольство.
@@ -74,7 +94,7 @@
 
         <li class="advantage-card advantage-card--green">
           <img class="advantage-card__img" src="img/advantage-imgs/adv-icon2.svg" alt="advantage-icon">
-          <h2 class="advantage-card__title">Высшая степень защиты площадки Kraken</h2>
+          <h3 class="advantage-card__title">Высшая степень защиты площадки Kraken</h3>
           <p class="advantage-card__text">
             Владельцы площадки Kraken учли ошибки и уязвимости прошлого, связанные с ИТ-инфраструктурой Гидры. Новый
             сайт Kraken обеспечен проактивной защитой DDoS Guard и децентрализованной BD, обеспечивая высшую степень
@@ -84,15 +104,13 @@
 
         <li class="advantage-card advantage-card--last">
           <img class="advantage-card__img" src="img/advantage-imgs/adv-icon3.svg" alt="advantage-icon">
-          <h2 class="advantage-card__title">Выгодный обмен
-            с минимальной комиссией</h2>
+          <h3 class="advantage-card__title">Выгодный обмен
+            с минимальной комиссией</h3>
           <p class="advantage-card__text">
             Кроме того, как часть промо-акции, новая площадка стремится привлечь аудиторию, предлагая минимальную
             комиссию на обмен BTC на карту или Qiwi.
           </p>
         </li>
-
-
       </ul>
     </div>
   </section>
@@ -378,8 +396,7 @@
   </section>
   <section class="enter-kraken">
     <div class="container">
-      <h2><span class="green-text">Заголовок</span> блока</h2>
-
+      <h2>Как зайти на сайт <span class="green-text">Кракен</span> безопасно</h2>
       <ul class="enter-kraken__content">
         <li class="enter-kraken__content-item">
           <h3>Вход на Кракен (Крамп)</h3>

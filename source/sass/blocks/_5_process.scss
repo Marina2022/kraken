@@ -2,6 +2,7 @@
   h2 {
     margin-bottom: 10px;
   }
+
   p {
     margin-bottom: 50px;
     max-width: 960px;
@@ -24,16 +25,22 @@
   margin-right: 20px;
   margin-bottom: 288px;
   width: 49.3%;
+
   &:last-child {
     margin-right: 0;
   }
+
   @media (max-width: 1532px) {
     width: 97%;
     margin-bottom: 40px;
   }
 
+
   .tools-types-list {
     display: flex;
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
 
   .tools-type {
@@ -42,6 +49,10 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
 
@@ -52,6 +63,7 @@
   font-size: 30px;
   line-height: 35px;
 }
+
 .enter-tool__green-title {
   margin-bottom: 40px;
   color: $green;
@@ -59,7 +71,7 @@
 
 p.enter-tool__text {
   margin-top: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -71,6 +83,7 @@ p.enter-tool__text {
   height: 40px;
   display: flex;
   align-items: center;
+  font-size: 16px;
 
 }
 
@@ -79,6 +92,7 @@ p.enter-tool__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .enter-tool--vpn:after {
@@ -89,17 +103,10 @@ p.enter-tool__text {
   left: 328px;
   position: absolute;
   background: url("../img/process-imgs/tentacle-3.png") no-repeat;
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
-
-//.enter-tool--tor:before {
-//  content: '';
-//  width: 172px;
-//  height: 184px;
-//  bottom: -57px;
-//  left: 147px;
-//  position: absolute;
-//  background: url("../img/process-imgs/tentacle-4.png") no-repeat;
-//}
 
 
 .enter-tool--tor:after {
@@ -110,4 +117,7 @@ p.enter-tool__text {
   left: 77px;
   position: absolute;
   background: url("../img/process-imgs/tentacle-7.png") no-repeat;
+  @media (max-width: 992px) {
+    display: none;
+  }
 }

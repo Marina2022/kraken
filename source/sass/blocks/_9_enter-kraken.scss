@@ -1,5 +1,8 @@
 .enter-kraken {
   padding-top: 200px;
+  @media (max-width: 1200px) {
+    padding-top: 10%;
+  }
 
   h2 {
     margin-bottom: 50px;
@@ -16,22 +19,36 @@
     text-align: center;
     max-width: 500px;
     margin: 0 auto 200px;
+    @media (max-width: 1200px) {
+      margin: 0 auto 10%;
+    }
   }
 }
 
 .enter-kraken__content {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 6px;
 }
 .enter-kraken__content-item {
   min-height: 331px;
-  width: 49.3%;
+  width: 48.3%;
   background-color: #111111;
   padding: 50px 49px 50px 30px;
   margin-bottom: 20px;
   &:nth-child(odd) {
     margin-right: 20px;
+    @media (max-width: 992px) {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 1200px) {
+    width: 48.3%;
+  }
+  @media (max-width: 992px) {
+    width: 100%;
+    min-height: 100px;
+    margin-right: 0;
   }
 }
 

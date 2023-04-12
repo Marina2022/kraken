@@ -1,5 +1,8 @@
 .video-about-kraken {
   margin-bottom: 250px;
+  @media (max-width: 1200px) {
+    margin-bottom: 10%;
+  }
   h2 {
     margin-bottom: 10px;
     max-width: 900px;
@@ -14,12 +17,18 @@
 .video-cover {
   width: 100%;
   height: auto;
-  min-height: 930px;
+  min-height: 720px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url("../img/video.png") no-repeat;
   background-size: cover;
+  @media (max-width: 1200px) {
+    min-height: 500px;
+  }
+  @media (max-width: 992px) {
+    min-height: 400px;
+  }
 }
 
 .video-frame {

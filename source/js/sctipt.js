@@ -21,7 +21,16 @@ moreFaq.addEventListener('click', () => {
 })
 
 
-// Видео - кастомная кнопка
+// hamburger menu
+
+const menuBtn = document.querySelector('.hamburger-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+menuBtn.addEventListener('click', ()=>{
+  console.log(mobileMenu.classList);
+  mobileMenu.classList.toggle('fully-hidden');
+})
+
+// Видео
 
 function initPlayVideo() {
   let videoCover = document.querySelector(".video-cover");
@@ -31,9 +40,7 @@ function initPlayVideo() {
   videoCover.addEventListener('click', () => {
     videoCover.style.display = "none";
     videoPlayer.innerHTML =
-      '<iframe class="video-frame" src="https://www.youtube.com/embed/' +
-      videoUrl +
-      '?feature=oembed&autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    '<iframe class="video-frame" src="https://www.youtube.com/embed/uYrzzT0yMTU?feature=oembed&autoplay=1&loop=1&modestbranding=1&rel=0" title="video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
   })
 }
 

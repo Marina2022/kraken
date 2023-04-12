@@ -1,7 +1,7 @@
 @import "../global/variables";
 
 .header {
-
+  //position: relative;
 }
 
 .main-nav {
@@ -11,40 +11,90 @@
   height: 116px;
   width: 100%;
   font-size: 18px;
+}
 
+.main-nav__brand {
+  font-size: 25px;
+  line-height: 31px;
+  color: #FFFFFF;
+  margin-right: 32%;
+  @media (max-width: 1400px) {
+    margin-right: 23%;
+  }
+}
 
-  &__brand {
-    font-size: 25px;
-    line-height: 31px;
+.main-nav__center-links {
+  display: flex;
+  justify-content: space-between;
+  width: 24%;
+  margin-right: auto;
+  align-items: center;
+  line-height: 23px;
+  @media (max-width: 1400px) {
+    width: 25%;
+  }
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  line-height: 23px;
+  color: rgba(255, 255, 255, 0.5);
+
+  &--active {
     color: #FFFFFF;
-    margin-right: 25%;
+  }
+}
+
+.main-nav__tor {
+  color: #fff;
+  margin-right: 20px;
+  @media (max-width: 992px) {
+    display: none;
+  }
+  @media (max-width: 576px) {
+    margin-right: 0;
+  }
+}
+
+.main-nav__vpn {
+  @media (max-width: 992px) {
+    display: none;
+  }
+  @media (max-width: 992px) {
+    background: none;
+  }
+}
+.hamburger-btn {
+  color: white;
+  height: 40px;
+  width: 40px;
+}
+
+.hamburger-btn {
+  display: none;
+  @media (max-width: 992px) {
+    display: inline-block;
+  }
+}
+
+.mobile-menu {
+
+  @media (max-width: 576px) {
+    text-align: center;
   }
 
-  &__center-links {
-    display: flex;
-    justify-content: space-between;
-    width: 17%;
-    margin-right: auto;
-    align-items: center;
-    line-height: 23px;
-  }
-
-  &__link {
-    line-height: 23px;
-    color: rgba(255, 255, 255, 0.5);
-
-    &--active {
-      color: #FFFFFF;
-    }
+  width: 100%;
+  background-color: black;
+  a {
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+    width: auto;
 
 
   }
-
-  &__tor {
-    color: #fff;
-    margin-right: 20px;
-  }
-
 
 
 }
