@@ -87,6 +87,9 @@
   width: 176px;
   height: 222px;
   background: url("../img/advantage-imgs/tentacle.png") no-repeat;
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 
 .advantage-card--last:after {
@@ -97,4 +100,7 @@
   width: 213px;
   height: 474px;
   background: url("../img/advantage-imgs/tentacle-2.png") no-repeat;
+  @media (max-width: 576px) {
+    display: none;
+  }
 }

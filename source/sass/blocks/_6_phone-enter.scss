@@ -6,6 +6,10 @@
     @media (max-width: 1200px) {
       margin-top: 10%;
     }
+    @media (max-width: 576px) {
+      margin-top: 5%;
+      margin-bottom: 10%;
+    }
   }
 
   margin-bottom: 200px;
@@ -34,6 +38,12 @@
   width: 65%;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .phone-enter__interfaces {
@@ -43,11 +53,20 @@
   @media (max-width: 1200px) {
     margin-bottom: 10%;
   }
+  @media (max-width: 576px) {
+    flex-wrap: wrap;
+  }
 }
 
 .phone-enter__interfaces-item {
   width: 43%;
   margin-right: 94px;
+  @media (max-width: 576px) {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -69,6 +88,14 @@
   display: flex;
   justify-content: space-between;
   margin-left: -60px;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 576px)  {
+    margin-left: 0;
+    text-align: center;
+
+  }
 }
 
 .phone-enter__numbers-item {
@@ -76,8 +103,13 @@
   margin-left: 60px;
   width: auto;
   position: relative;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 576px) {
 
-  p {
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   &:not(:first-child):before {
@@ -88,6 +120,10 @@
     background-color: rgb(10, 215, 141, .2);
     left: -60px;
     top: 33%;
+    @media (max-width: 768px) {
+      display: none;
+    }
+
   }
 
 

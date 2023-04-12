@@ -13,6 +13,15 @@
   @media (max-width: 992px) {
     background: none;
   }
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+
+  .green-btn {
+    @media (max-width: 576px) {
+      margin-right: 20px;
+    }
+  }
 
 }
 
@@ -52,12 +61,18 @@
     @media (max-width: 992px) {
       margin-bottom: 30px;
     }
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
   }
 
 }
 
 .promo__img {
   padding-left: 10%;
+  @media (max-width: 576px) {
+  display: none;
+  }
 }
 
 .tor-download-btn {

@@ -99,6 +99,11 @@ h2 {
   @media (max-width: 992px) {
     font-size: 32px;
   }
+  @media (max-width: 576px) {
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+  }
 }
 
 h3 {

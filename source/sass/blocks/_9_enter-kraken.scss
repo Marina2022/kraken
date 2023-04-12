@@ -50,6 +50,9 @@
     min-height: 100px;
     margin-right: 0;
   }
+  @media (max-width: 576px) {
+    padding: 20px;
+  }
 }
 
 .enter-kraken__content-item--grad {

@@ -2,6 +2,7 @@
 
   .container {
     position: relative;
+
     &:before {
       content: '';
       width: 51px;
@@ -10,6 +11,9 @@
       top: 26px;
       right: 40px;
       background: url("../img/reviews-icon.svg") no-repeat;
+      @media (max-width: 576px) {
+        display: none;
+      }
     }
   }
 
@@ -24,6 +28,11 @@
     @media (max-width: 992px) {
       max-width: 80%;
     }
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
+
+
   }
 
   .buyer-name {
@@ -63,17 +72,22 @@
     margin-bottom: 20px;
     margin-right: 0;
   }
+  @media (max-width: 576px) {
+    padding: 20px 10px;
+  }
+
   &:last-child {
     margin-right: 0;
   }
-    &:after {
-      content: '';
-      width: 51px;
-      height: 39px;
-      position: absolute;
-      top: 40px;
-      right: 28px;
-      background: url("../img/quotes.svg") no-repeat;
+
+  &:after {
+    content: '';
+    width: 51px;
+    height: 39px;
+    position: absolute;
+    top: 40px;
+    right: 28px;
+    background: url("../img/quotes.svg") no-repeat;
 
   }
 }
