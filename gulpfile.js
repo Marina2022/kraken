@@ -7,6 +7,10 @@ import browser from "browser-sync";
 import sourcemaps from "gulp-sourcemaps";
 import terser from "gulp-terser";
 import del from "gulp-clean";
+import webp from "gulp-webp";
+import imagemin from "gulp-imagemin";
+import imageminMozjpeg from "imagemin-mozjpeg";
+import imageminOptipng from "imagemin-optipng";
 
 export const clean = () => {
   return gulp.src("build").pipe(del({ force: true }));
@@ -47,7 +51,7 @@ const copyImg = () => {
 const makeWebp = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
-    //.pipe(webp({ quality: 90 }))
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"));
 };
 
@@ -121,7 +125,7 @@ export default gulp.series(
   php,
   scripts,
   copyImg,
-  //makeWebp,
+  makeWebp,
   server,
   watcher
 );

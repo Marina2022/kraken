@@ -11,14 +11,12 @@
   <meta name="description"
         content=" Кракен - безопасный даркнет маркетплейс, где вы можете приобрести любые товары абсолютно анонимно">
   <title>Kraken</title>
-  <!--  <link rel="manifest" href=manifest.json">-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -26,20 +24,19 @@
   <div class="container">
     <div class="main-nav">
       <span class="main-nav__brand">Кракен</span>
-
-        <div class="main-nav__center-links">
-          <a href="#" class="main-nav__link main-nav__link--active">Зеркало</a>
-          <a href="#">Вход</a>
-          <a href="#">Ссылка</a>
-        </div>
-        <a href="#" class="main-nav__tor">Войти через TOR</a>
-        <a href="#" class="main-nav__vpn green-btn">Войти через VPN</a>
-
-        <button class="button hamburger-btn">
-          <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-        </button>
-
-
+      <div class="main-nav__center-links">
+        <a href="#" class="main-nav__link main-nav__link--active">Зеркало</a>
+        <a href="#">Вход</a>
+        <a href="#">Ссылка</a>
+      </div>
+      <a href="#" class="main-nav__tor">Войти через TOR</a>
+      <a href="#" class="main-nav__vpn green-btn">Войти через VPN</a>
+      <button class="button hamburger-btn">
+        <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+      </button>
     </div>
     <div class="mobile-menu fully-hidden">
       <a href="#" class="main-nav__link main-nav__link--active">Зеркало</a>
@@ -49,7 +46,6 @@
       <a href="#" class="main-nav__vpn green-btn">Войти через VPN</a>
     </div>
   </div>
-
 </header>
 
 <main>
@@ -71,7 +67,11 @@
           <a class="tor-download-btn" href="#">Скачать TOR</a>
         </div>
         <div class="promo__img">
-          <img src="img/phone.png" alt="phone">
+          <picture>
+            <source srcset="img/phone.webp" type="image/webp">
+            <source srcset="img/phone.png" type="image/png">
+            <img src="img/phone.png" alt="phone">
+          </picture>
         </div>
       </div>
     </div>
@@ -80,8 +80,6 @@
     <div class="container">
       <h2 class="advantages__title"><span class="green-text">Преимущества</span> использования <span class="green-text">Кракен</span>
         даркнет маркетплейс</h2>
-
-
       <ul class="advantages__list">
         <li class="advantage-card advantage-card--first">
           <img class="advantage-card__img" src="img/advantage-imgs/adv-icon1.svg" alt="advantage-icon">
@@ -91,7 +89,6 @@
             представили свои сложные и непонятные личные кабинеты, пользователи выразили недовольство.
           </p>
         </li>
-
         <li class="advantage-card advantage-card--green">
           <img class="advantage-card__img" src="img/advantage-imgs/adv-icon2.svg" alt="advantage-icon">
           <h3 class="advantage-card__title">Высшая степень защиты площадки Kraken</h3>
@@ -101,7 +98,6 @@
             защиты.
           </p>
         </li>
-
         <li class="advantage-card advantage-card--last">
           <img class="advantage-card__img" src="img/advantage-imgs/adv-icon3.svg" alt="advantage-icon">
           <h3 class="advantage-card__title">Выгодный обмен
@@ -118,7 +114,11 @@
     <div class="container">
       <div class="darknet__wrapper">
         <div class="darknet__img-container">
-          <img src="img/darknet-imgs/bus-photo.png" alt="kraken-bus-photo">
+          <picture>
+            <source srcset="img/darknet-imgs/bus-photo.webp" type="image/webp">
+            <source srcset="img/darknet-imgs/bus-photo.png" type="image/png">
+            <img src="img/darknet-imgs/bus-photo.png" alt="kraken-bus-photo">
+          </picture>
         </div>
         <div class="darknet__content">
           <h2><span class="green-text">Кракен</span> Даркнет</h2>
@@ -128,16 +128,13 @@
             анонимно. Вам не нужно беспокоиться о своей конфиденциальности, потому что мы используем самые современные
             технологии шифрования, чтобы защитить вас.
           </p>
-
           <h3>Широкий ассортимент товаров</h3>
           <p>
             В Кракене вы найдете широкий ассортимент товаров - от наркотиков и оружия до фальшивых документов и краденых
             кредитных карт. Мы тщательно проверяем каждого продавца, чтобы убедиться, что он предлагает только
             высококачественные товары.
           </p>
-
         </div>
-
       </div>
     </div>
   </section>
@@ -154,7 +151,6 @@
       <div class="enter-tools-list">
         <div class="enter-tool enter-tool--vpn">
           <h3 class="enter-tool__green-title green-title">VPN</h3>
-
           <div class="tools-types-list">
             <div class="tools-type">
               <h4 class="enter-tool__subtitle">Для компьютера</h4>
@@ -163,7 +159,6 @@
               </p>
               <a href="#" class="button green-btn tools-type__button">Скачать RiseUp VPN</a>
             </div>
-
             <div class="tools-type">
               <h4 class="enter-tool__subtitle">Для мобильных устройств</h4>
               <p class="enter-tool__text">
@@ -173,15 +168,11 @@
                 <a href="#" class="button green-btn tools-type__button">Скачать VPN</a>
                 <span>Android / Iphone</span>
               </div>
-
             </div>
           </div>
-
         </div>
-
         <div class="enter-tool enter-tool--tor">
           <h3 class="enter-tool__green-title green-title">TOR</h3>
-
           <div class="tools-types-list">
             <div class="tools-type">
               <h4 class="enter-tool__subtitle">Для компьютера</h4>
@@ -190,7 +181,6 @@
               </p>
               <a href="#" class="button green-btn tools-type__button">Скачать TOR Browser</a>
             </div>
-
             <div class="tools-type">
               <h4 class="enter-tool__subtitle">Для мобильных устройств</h4>
               <p class="enter-tool__text">
@@ -202,12 +192,8 @@
               </div>
             </div>
           </div>
-
         </div>
-
-
       </div>
-
     </div>
   </section>
   <section class="phone-enter">
@@ -215,7 +201,12 @@
       <h2>Сайт <span class="green-text">кракен</span> - вход с телефона</h2>
       <div class="phone-enter__wrapper">
         <div class="phone-enter__img-container">
-          <img src="img/phone-enter-imgs/phones.png" alt="phones-image">
+          <picture>
+            <source srcset="img/phone-enter-imgs/phones.webp" type="image/webp">
+            <source srcset="img/phone-enter-imgs/phones.png" type="image/png">
+            <img src="img/phone-enter-imgs/phones.png" alt="phones-image">
+          </picture>
+
         </div>
         <div class="phone-enter__content">
           <div class="phone-enter__interfaces">
@@ -281,7 +272,6 @@
                 “Это мой бизнес - работаю с Kraken более 2-х лет!”
               </div>
             </div>
-
           </div>
           <p class="review-text">
             Очень долго ждал релиза новой Гидры. Меня не радует покупка моего любимого товара на Солярисе или на Меге.
@@ -295,7 +285,6 @@
           <div class="buyer-name">
             Макс Вивадос
           </div>
-
         </li>
         <li class="reviews-item">
           <div class="reviews-item__header">
@@ -310,7 +299,6 @@
               </div>
             </div>
           </div>
-
           <p class="review-text">
             Я работаю на риске, и раньше каждую неделю покупала хмурое на Гидре. Каждую субботу я вмазывалась и исчезала
             на сутки. Мне нравился такой образ жизни, но когда Гидра закрылась, я начала трезветь. Это было плохо для
@@ -326,7 +314,6 @@
           </div>
         </li>
       </ul>
-
     </div>
   </section>
   <section class="garant">
@@ -403,7 +390,6 @@
           <p>Мы разработали пошаговый алгоритм для удобного входа на Крамп, специально для наших пользователей. Итак,
             есть два основных способа, как зайти на Кракен: использование официального зеркала или ссылки онион.</p>
         </li>
-
         <li class="enter-kraken__content-item enter-kraken__content-item--grad">
           <h3>Как войти на Кракен / Крамп</h3>
           <p>Использование оригинальной ссылки. Скачайте и установите браузер Tor, настройте мосты, если необходимо.
@@ -411,7 +397,6 @@
             мобильный телефон, то лучше использовать обычное зеркало, так как использование браузера Tor может замедлить
             работу.</p>
         </li>
-
         <li class="enter-kraken__content-item enter-kraken__content-item--grad">
           <h3>Кракен Онион</h3>
           <p>Прохождение капчи совсем несложно. Нужно ввести символы, которые вы видите на картинке, в свободное поле в
@@ -424,7 +409,6 @@
             не получится. После этого введите текст и загрузите фото, а затем подтвердите регистрацию. Все просто, не
             так ли?</p>
         </li>
-
         <li class="enter-kraken__content-item">
           <h3>Кракен Тор</h3>
           <p>При повторном посещении сайта и наличии аккаунта просто авторизуйтесь, т.е. введите логин и пароль, а затем
@@ -433,117 +417,146 @@
       </ul>
       <p class="enter-kraken__slogan">Посещайте наш маркетплейс и приобретайте качественные товары по выгодной цене</p>
     </div>
-
   </section>
   <section class="faqs">
     <div class="container">
       <h2>
         <span class="green-text">FAQ</span>s
       </h2>
-
-      <ul class="faq-list">
-        <li class="faq-list__item faq-item faq-item--opened">
-          <p class="faq-item__title">
+      <ul class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+        <li class="faq-list__item faq-item faq-item--opened" itemscope itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
+          <p class="faq-item__title" itemprop="name">
             Как зарегистрироваться на Кракен Маркетплейс?
           </p>
-          <p class="faq-item__desc">
-            Для регистрации на Кракен Маркетплейс необходимо перейти на сайт платформы и выбрать "Регистрация". Далее
-            следуйте инструкциям и заполните необходимые данные для создания аккаунта. Обязательно убедитесь в том, что
-            вы используете действующий адрес электронной почты и пароль, который не используется на других платформах.
-          </p>
+          <div class="faq-item__desc" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">
+              Для регистрации на Кракен Маркетплейс необходимо перейти на сайт платформы и выбрать "Регистрация". Далее
+              следуйте инструкциям и заполните необходимые данные для создания аккаунта. Обязательно убедитесь в том,
+              что вы используете действующий адрес электронной почты и пароль, который не используется на других
+              платформах.
+            </p>
+          </div>
         </li>
-        <li class="faq-list__item faq-item">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item faq-item--opened" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Какие криптовалюты и токены доступны на Кракен Маркетплейс?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            На Кракен Маркетплейс доступна широкая выборка криптовалют и токенов, включая Bitcoin, Ethereum, Ripple,
-            Litecoin, Bitcoin Cash и другие. Пользователи могут также торговать фиатными валютами, такими как доллары
-            США, евро, фунты стерлингов и японские иены.
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              На Кракен Маркетплейс доступна широкая выборка криптовалют и токенов, включая Bitcoin, Ethereum, Ripple,
+              Litecoin, Bitcoin Cash и другие. Пользователи могут также торговать фиатными валютами, такими как доллары
+              США, евро, фунты стерлингов и японские иены.
+            </p>
+          </div>
         </li>
-        <li class="faq-list__item faq-item">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item faq-item--opened" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Какие методы оплаты доступны на Кракен Маркетплейс?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            Кракен Маркетплейс поддерживает различные методы оплаты, включая банковские переводы, платежные карты и
-            электронные кошельки.
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              Кракен Маркетплейс поддерживает различные методы оплаты, включая банковские переводы, платежные карты и
+              электронные кошельки.
+            </p>
+          </div>
         </li>
-        <li class="faq-list__item faq-item">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item faq-item--opened" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Как обеспечивается безопасность на Кракен Маркетплейс?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            Кракен Маркетплейс обеспечивает высокий уровень безопасности средств и данных пользователей. Платформа
-            использует передовые технологии безопасности, включая многофакторную аутентификацию и хранение средств
-            пользователей в холодных кошельках (offline).
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              Кракен Маркетплейс обеспечивает высокий уровень безопасности средств и данных пользователей. Платформа
+              использует передовые технологии безопасности, включая многофакторную аутентификацию и хранение средств
+              пользователей в холодных кошельках (offline).
+            </p>
+          </div>
         </li>
-        <li class="faq-list__item faq-item">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item faq-item--opened" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Какие инструменты и функции доступны для трейдинга на Кракен Маркетплейс?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            На Кракен Маркетплейс доступны различные инструменты и функции для трейдинга, включая возможность открытия
-            лимитных ордеров, стоп-лосс ордеров и тейк-профит ордеров. Кроме того, платформа предоставляет доступ к
-            маржинальному трейдингу и фьючерсам на криптовалюты.
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              На Кракен Маркетплейс доступны различные инструменты и функции для трейдинга, включая возможность открытия
+              лимитных ордеров, стоп-лосс ордеров и тейк-профит ордеров. Кроме того, платформа предоставляет доступ к
+              маржинальному трейдингу и фьючерсам на криптовалюты.
+            </p>
+          </div>
         </li>
-
         <li class="more-faq">
           <span>Ещё</span>
           <button class="button arrow-down-btn"><img src="img/arrow-down.svg" alt="arrow-down"></button>
-
         </li>
-        <li class="faq-list__item faq-item fully-hidden">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item fully-hidden" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Какие комиссии взимаются на Кракен Маркетплейс?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            Комиссии на Кракен Маркетплейс зависят от объема торгов пользователей и типа ордера. Обычно комиссии
-            составляют от 0,10% до 0,26% за сделку.
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              Комиссии на Кракен Маркетплейс зависят от объема торгов пользователей и типа ордера. Обычно комиссии
+              составляют от 0,10% до 0,26% за сделку.
+            </p>
+          </div>
         </li>
-        <li class="faq-list__item faq-item fully-hidden">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item fully-hidden" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Могу ли я использовать Кракен Маркетплейс в своей стране?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            Кракен Маркетплейс доступен для использования в большинстве стран мира, но не во всех. Перед использованием
-            платформы убедитесь в том, что она доступна в вашей стране.
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              Кракен Маркетплейс доступен для использования в большинстве стран мира, но не во всех. Перед
+              использованием
+              платформы убедитесь в том, что она доступна в вашей стране.
+            </p>
+          </div>
         </li>
-        <li class="faq-list__item faq-item fully-hidden">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item fully-hidden" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Как связаться с поддержкой на Кракен Маркетплейс?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            Кракен Маркетплейс предоставляет пользователем возможность связаться с поддержкой через онлайн-чат на сайте,
-            электронную почту и телефон. Поддержка работает 24/7.
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              Кракен Маркетплейс предоставляет пользователем возможность связаться с поддержкой через онлайн-чат на
+              сайте,
+              электронную почту и телефон. Поддержка работает 24/7.
+            </p>
+          </div>
         </li>
-        <li class="faq-list__item faq-item fully-hidden">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item fully-hidden" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Какую информацию необходимо предоставить для прохождения процедуры KYC на Кракен Маркетплейс?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            Для прохождения KYC (Know Your Customer) на Кракен Маркетплейс необходимо предоставить копию паспорта или
-            другого документа, удостоверяющего личность, а также документ, подтверждающий место жительства.
-            Дополнительную информацию может потребоваться в зависимости от страны проживания.
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              Для прохождения KYC (Know Your Customer) на Кракен Маркетплейс необходимо предоставить копию паспорта или
+              другого документа, удостоверяющего личность, а также документ, подтверждающий место жительства.
+              Дополнительную информацию может потребоваться в зависимости от страны проживания.
+            </p>
+          </div>
         </li>
-        <li class="faq-list__item faq-item fully-hidden">
-          <p class="faq-item__title">
+        <li class="faq-list__item faq-item fully-hidden" itemscope itemtype="https://schema.org/Question"
+            itemprop="mainEntity">
+          <p class="faq-item__title" itemprop="name">
             Можно ли использовать Кракен Маркетплейс на мобильном устройстве?
           </p>
-          <p class="faq-item__desc fully-hidden">
-            Да, Кракен Маркетплейс имеет мобильное приложение для пользователей iOS и Android, которое позволяет быстро
-            и удобно управлять аккаунтом и проводить торговые операции на мобильном устройстве.
-          </p>
+          <div class="faq-item__desc" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" itemscope>
+            <p itemprop="text">
+              Да, Кракен Маркетплейс имеет мобильное приложение для пользователей iOS и Android, которое позволяет
+              быстро
+              и удобно управлять аккаунтом и проводить торговые операции на мобильном устройстве.
+            </p>
+          </div>
         </li>
-
       </ul>
     </div>
   </section>
@@ -557,14 +570,11 @@
         доступ к различным инструментам и функциям для трейдинга.
       </div>
       <video class="video-player" preload="none" poster="img/video.png" src="video/video.mp4">
-
       </video>
-      <button class="button video-btn"> <img src="img/video-btn.svg" width="86" height="86" alt="video-button"></button>
-
+      <button class="button video-btn"><img src="img/video-btn.svg" width="86" height="86" alt="video-button"></button>
     </div>
   </section>
 </main>
-
 <footer class="main-footer">
   <div class="container">
     <div class="footer__wrapper">
@@ -635,9 +645,7 @@
       отправлять <b>abuse@kraken.kz</b>
     </div>
   </div>
-
 </footer>
-
 
 <script src="js/sctipt.js"></script>
 </body>

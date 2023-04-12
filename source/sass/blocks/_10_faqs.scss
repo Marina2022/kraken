@@ -46,6 +46,9 @@
       width: 40px;
       top: 0;
     }
+    @media (max-width: 768px) {
+     top: 10px;
+    }
   }
 
 }
