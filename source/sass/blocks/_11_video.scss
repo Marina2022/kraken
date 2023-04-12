@@ -1,5 +1,14 @@
+.video-player {
+  width: 100%;
+  object-fit: contain;
+  max-height: 920px;
+
+}
+
 .video-about-kraken {
   margin-bottom: 250px;
+  position: relative;
+
   @media (max-width: 1200px) {
     margin-bottom: 10%;
   }
@@ -14,29 +23,26 @@
   }
 }
 
-.video-cover {
-  width: 100%;
-  height: auto;
-  min-height: 720px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("../img/video.png") no-repeat;
-  background-size: cover;
-  @media (max-width: 1200px) {
-    min-height: 500px;
-  }
-  @media (max-width: 992px) {
-    min-height: 400px;
-  }
-  @media (max-width: 576px) {
-    min-height: 300px;
-  }
-}
 
-.video-frame {
-  width: 100%;
-  height: auto;
-  min-height: 930px;
-  border: none;
+.video-btn {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  @media (max-width: 992px) {
+    top: 55%;
+  }
+  @media (max-width: 768px) {
+    top: 65%;
+
+  }
+
+  @media (max-width: 576px) {
+    top: unset;
+    bottom: 21vw;
+    width: 60px;
+    height: 60px;
+  }
 }

@@ -32,18 +32,19 @@ menuBtn.addEventListener('click', ()=>{
 
 // Видео
 
-function initPlayVideo() {
-  let videoCover = document.querySelector(".video-cover");
-  let videoPlayer = document.querySelector(".video-player");
-  let videoUrl = 'uYrzzT0yMTU';
+const videoBtn = document.querySelector(".video-btn");
+const video = document.querySelector(".video-player");
 
-  videoCover.addEventListener('click', () => {
-    videoCover.style.display = "none";
-    videoPlayer.innerHTML =
-    '<iframe class="video-frame" src="https://www.youtube.com/embed/uYrzzT0yMTU?feature=oembed&autoplay=1&loop=1&modestbranding=1&rel=0" title="video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-  })
-}
+videoBtn.addEventListener('click', ()=>{
+  video.play();
+  video.controls = true;
+  videoBtn.style.display = 'none';
 
-initPlayVideo();
+  video.addEventListener('ended', function () {
+    this.src = this.src;
+    this.controls = false;
+    videoBtn.style.display = 'inline-block';
+  }, false);
 
+})
 

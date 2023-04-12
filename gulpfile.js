@@ -107,7 +107,7 @@ const watcher = () => {
 
 export const copy = () => {
   return gulp
-    .src(["source/fonts/*", "source/*.ico", "source/img/**/*.jpg", "source/img/**/*.png", "source/*.php",  "source/css/**/*.css",  "source/*.png", "source/*.ico", "source/*.json" ], {
+    .src(["source/fonts/*", "source/*.ico", "source/img/**/*.jpg", "source/img/**/*.png", "source/*.php",  "source/css/**/*.css",  "source/*.png", "source/*.ico", "source/*.json", "source/video/**/*.mp4" ], {
       base: "source",
     })
     .pipe(gulp.dest("build"));
