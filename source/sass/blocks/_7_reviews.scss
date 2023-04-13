@@ -20,6 +20,9 @@
 
   h2 {
     margin-bottom: 10px;
+    @media (max-width: 576px) {
+      margin-top: 50px;
+    }
   }
 
   .lead {

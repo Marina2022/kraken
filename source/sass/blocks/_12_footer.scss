@@ -1,10 +1,14 @@
 .main-footer {
   font-family: 'Mulish', sans-serif;
   font-weight: 400;
+  @media (max-width: 576px) {
+    margin-top: 100px;
+  }
   h3 {
     font-size: 25px;
     line-height: 31px;
     margin-bottom: 10px;
+
   }
   p {
     font-size: 18px;
@@ -51,5 +55,10 @@
 .footer__bottom-line {
   text-align: center;
   margin-bottom: 25px;
+  @media (max-width: 576px) {
+    font-size: 14px;
+    line-height: 18px;
+
+  }
 
 }

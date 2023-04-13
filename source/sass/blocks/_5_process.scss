@@ -1,6 +1,9 @@
 .process {
   h2 {
     margin-bottom: 10px;
+    @media (max-width: 576px) {
+      margin-top: 50px;
+    }
   }
 
   p {
@@ -129,5 +132,11 @@ p.enter-tool__text {
   background: url("../img/process-imgs/tentacle-7.png") no-repeat;
   @media (max-width: 992px) {
     display: none;
+  }
+}
+
+.lead {
+  @media (max-width: 576px)  {
+    text-align: center;
   }
 }

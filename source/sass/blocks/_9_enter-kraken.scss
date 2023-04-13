@@ -6,8 +6,10 @@
 
   h2 {
     margin-bottom: 50px;
+    @media (max-width: 576px) {
+      margin-top: 50px;
+    }
   }
-
   h3 {
     margin-bottom: 5px;
   }
@@ -29,6 +31,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 6px;
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+
 }
 .enter-kraken__content-item {
   min-height: 331px;

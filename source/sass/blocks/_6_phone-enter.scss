@@ -5,17 +5,19 @@
     margin-bottom: 70px;
     @media (max-width: 1200px) {
       margin-top: 10%;
+      margin-bottom: 15%;
     }
     @media (max-width: 576px) {
-      margin-top: 5%;
+      margin-top: 50px;
       margin-bottom: 10%;
     }
   }
 
   margin-bottom: 200px;
-  @media (max-width: 1200px) {
-    margin-bottom: 15%;
+  @media (max-width: 576px) {
+    margin-bottom: 130px;
   }
+
 }
 
 .phone-enter__wrapper {

@@ -26,7 +26,6 @@ moreFaq.addEventListener('click', () => {
 const menuBtn = document.querySelector('.hamburger-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 menuBtn.addEventListener('click', ()=>{
-  console.log(mobileMenu.classList);
   mobileMenu.classList.toggle('fully-hidden');
 })
 
@@ -39,7 +38,6 @@ videoBtn.addEventListener('click', ()=>{
   video.play();
   video.controls = true;
   videoBtn.style.display = 'none';
-
   video.addEventListener('ended', function () {
     this.src = this.src;
     this.controls = false;
