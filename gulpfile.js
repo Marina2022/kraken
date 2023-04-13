@@ -21,7 +21,7 @@ export const clean = () => {
 const scripts = () => {
   return gulp
     .src("source/js/**/*.js")
-    // .pipe(terser())  // минификатор js
+    .pipe(terser())  // минификатор js
     .pipe(gulp.dest("build/js"))
     .pipe(browser.stream());
 };
@@ -60,7 +60,7 @@ const makeWebp = () => {
 export const html = () => {
   return gulp
     .src("source/**/*.html")
-    // .pipe(htmlmin({ collapseWhitespace: true }))  // это минифай, потом верни
+    .pipe(htmlmin({ collapseWhitespace: true }))  // это минифай, потом верни
     .pipe(gulp.dest("build"));
 };
 
@@ -77,8 +77,8 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
-    // .pipe(sourcemaps.write())
-    // .pipe(minifyCss())
+    .pipe(sourcemaps.write())
+    .pipe(minifyCss())
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());

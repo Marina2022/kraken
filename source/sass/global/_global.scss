@@ -31,6 +31,7 @@ a {
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
+
 }
 
 .hidden {
@@ -87,6 +88,9 @@ h1 {
   padding: 15px 30px;
   color: #FFF;
   font-size: 18px;
+  &:hover {
+    background-color: darken($green, 7);
+  }
 }
 
 h2 {
